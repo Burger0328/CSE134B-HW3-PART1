@@ -1,0 +1,194 @@
+@import url("variables.css");
+/*
+  @import is required for this assignment.
+  A <link> element is generally preferred in production.
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--page-color);
+    color: var(--text-color);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+body > header, main, body > footer{
+    width: 90%;
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+h1{
+    color: var(--accent-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+header p{
+    color: var(--accent-color);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0.1rem;
+    margin-bottom: -0.8rem;
+}
+
+main{
+    padding-bottom: 1rem;
+}
+
+article > p{
+    color: black;
+    font-size: 1.3rem;
+    font-style:italic;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+}
+
+section{
+    margin-top: 3rem;
+}
+
+h2{
+    color:var(--text-color);
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 0.7rem;
+}
+
+
+section p{
+    margin-bottom: 0.9rem;
+    line-height: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+[lang]{
+    font-style: italic;
+}
+
+.latin-term{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+dl{
+    margin-top: 0.5rem;
+}
+
+dt{
+    color: var(--accent-color);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+dt::before{
+    content: "🧀 ";
+}
+
+dt + dd{
+    border-left: 0.08rem solid yellow;
+    margin-left: 2rem;
+    padding-left: 0.8em;
+    padding-top: 0.15em;
+    padding-bottom: 0.25em;
+}
+#warning{
+    background:rgb(255, 255, 230);
+    border-top: 0.2rem solid var(--accent-color);
+    border-right: 0.2rem solid var(--accent-color);
+    border-bottom: 0.2rem solid var(--accent-color);
+    border-left: 0.2rem solid var(--accent-color);
+    color: var(--text-color);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    padding: 1em;
+}
+
+blockquote{
+    background:rgb(255, 246, 197);
+    border-left:0.22rem solid var(--accent-color);
+    margin-top: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0.9em 2em;
+}
+
+blockquote p::before{
+    content: "“";
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-right: -0.05em;
+}
+
+blockquote p{
+    font-size: 1.5rem;
+}
+
+form{
+    width: 100%;
+    max-width: var(--content-width);
+    margin-top: 0.4rem;
+}
+
+fieldset{
+    background: var(--page-color);
+    border: 0.1rem solid #aaa;
+    padding: 0.7em;
+}
+
+legend{
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+fieldset div{
+    margin-bottom: 1.2rem;
+}
+
+label{
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+[type="text"]{
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:0.1rem solid orange;
+    color: var(--text-color);
+    padding: 0.3rem 0rem;
+}
+
+button{
+    background: #eeeeee;
+    border: 0.08rem solid #999;
+    color: var(--text-color);
+    font-family:initial;
+}
+
+body > footer {
+  color: var(--text-color);
+  text-align: center;
+}
